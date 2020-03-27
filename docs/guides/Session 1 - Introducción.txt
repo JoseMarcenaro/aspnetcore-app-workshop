@@ -18,6 +18,7 @@ Aplicaciones en .NET Core
  - app de consola, Program.cs instancia un host (listener)
  - .NET Core construido en base a DI: método Startup.ConfigureServices
  - HTTPServer request/response pipeline: método Startup.Configure
+ - Dos (/tres) modelos de ejecución: Kestrel o IIS Express / IIS - Profile dropdown
 
 EF Migrations
  - Modelo "code first" : Schema en clases => Tablas SQL
