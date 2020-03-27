@@ -1,0 +1,35 @@
+Session 1
+
+Objetivo del ejercicio
+ - Aprender conceptos básicos de .net Core
+ - Aprender arquitectura de una solución
+ - Usar las "buenas prácticas" de construccion de una API y Website en .NET Core
+ - (Re)Escribir el código de 3pTestApi (Azure) con estas técnicas.
+
+Arquitectura de la solucion
+ - repasar el diagrama
+
+Entity Framework - ORM
+ - mapeo de tablas a clases
+ - metodos para operaciones sobre el SQL (".Insert", ".Update")
+ - interfaz fluida ("Linq") para consultas
+
+Aplicaciones en .NET Core
+ - app de consola, Program.cs instancia un host (listener)
+ - .NET Core construido en base a DI: método Startup.ConfigureServices
+ - HTTPServer request/response pipeline: método Startup.Configure
+
+EF Migrations
+ - Modelo "code first" : Schema en clases => Tablas SQL
+ - Generación de código para aplicar cada modificación a la DB, según su estado
+ - Primera "modficación" ("Initial") crea la DB
+
+Scaffolding an API Controller
+ - Generación de código para un controllador CRUD típico.
+
+Swashbuckle - Swagger
+ - Swagger: Standard de documentación de APIs
+ - Swashbuckle - herramientas de generación automática de:
+ 	- la documentacion: /swagger/v1/swagger.json
+ 	- una UI de visualización y testing básico
+ - La documentación puede importarse a Postman - u otros clientes de API
